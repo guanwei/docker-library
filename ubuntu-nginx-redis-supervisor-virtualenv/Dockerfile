@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Edward Guan <285006386@qq.com>
 
 RUN apt-get update && \
-    apt-get install python-pip python-setuptools nginx tzdata -y --no-install-recommends && \
+    apt-get install python-pip python-setuptools nginx redis-server tzdata -y --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
 # set timezone
